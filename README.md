@@ -1,3 +1,4 @@
+
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
 
 <p align="center">
@@ -20,6 +21,73 @@ Laravel is a web application framework with expressive, elegant syntax. We belie
 - [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
 
 Laravel is accessible, powerful, and provides tools required for large, robust applications.
+
+## Installation Guide
+
+### Prerequisites
+
+- PHP >= 8.0
+- Composer
+- Node.js & npm (for frontend assets)
+- MySQL or any supported database
+
+### Step-by-step Installation
+
+1. **Clone the Repository**  
+   Clone the Laravel project to your local machine:
+   ```bash
+   git clone https://github.com/username/your-laravel-app.git
+   cd your-laravel-app
+   ```
+
+2. **Install Dependencies**  
+   Install PHP dependencies using Composer:
+   ```bash
+   composer install
+   ```
+
+   Then, install JavaScript dependencies with npm:
+   ```bash
+   npm install
+   npm run dev
+   ```
+
+3. **Set Up Environment Variables**  
+   Copy the `.env.example` file to `.env`:
+   ```bash
+   cp .env.example .env
+   ```
+
+   Then, update the `.env` file with your database credentials and other configurations.
+
+4. **Generate Application Key**  
+   Generate the application encryption key:
+   ```bash
+   php artisan key:generate
+   ```
+
+5. **Run Database Migrations**  
+   Run the database migrations to create the necessary tables:
+   ```bash
+   php artisan migrate
+   ```
+
+6. **Start the Application**  
+   Run the local development server:
+   ```bash
+   php artisan serve
+   ```
+
+   The application will be available at `http://localhost:8000`.
+
+### Admin Dashboard Access
+
+To access the admin dashboard, you can use the following credentials:
+
+- **Email:** admin@filament.php.com
+- **Password:** admin123
+
+Access the admin panel at `/admin` route (e.g., `http://localhost:8000/admin`).
 
 ## Learning Laravel
 
